@@ -17,8 +17,8 @@ Vea el Inicio rápido para más detalles.
 
 # Ejemplos
 
-Echa un vistazo a la [vitrina](#) de bootpack en uso.
+Echa un vistazo a los [templates](https://mayanfy/themes) desarrollados con bootpack.
 
 ***
 
-Documentación desarrollada con [docsify](#)
+Documentación desarrollada con [docsify](https://docsify.js.org)
