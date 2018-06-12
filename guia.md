@@ -1,8 +1,8 @@
 # Inicio rápido
 
-Instalar **npm**, este viene con la instalación de [Node JS](https://nodejs.org/es/) para el ejecutar bootpack se trabajo con la versión Actual(v10.4.0).
+Instalar **npm**, este viene con la instalación de [Node JS](https://nodejs.org/es/) para el ejecutar bootpack se instalo la versión Actual(v10.4.0).
 
-?> **A considerar:** Bootpack trae integrado los las fuentes de [Font Awesome v4.7](https://fontawesome.com/v4.7.0/) y [Material Design Icons](https://materialdesignicons.com/)
+?> **A considerar:** Bootpack trae integrado las fuentes de [Font Awesome v4.7](https://fontawesome.com/v4.7.0/) y [Material Design Icons](https://materialdesignicons.com/)
 
 ## Descargar Bootpack
 
@@ -27,7 +27,7 @@ Una vez que tenemos instalado npm y descargado el repositorio procedemos a insta
 
 ## Ejecutar Bootpack
 
-Ya que los paquetes se han instalado ejecutamos podemos ejecutar uno de los siguientes comandos para tener los archivos de bootstrap. En este caso sera el archivo **CSS** y **JS**.
+Una vez instaladas las dependencias pasamos a ejecutar uno de los siguientes comandos para tener los archivos de bootstrap dependiendo si es cuando estamos desarrollando o en su caso ya es para producción. En ambos casos se generaran los archivos `main.css` y `app.js` dentro la carpeta definida para el proyecto.
 
 ```bash
 # Comando para generar archivos de desarrollo
@@ -36,3 +36,5 @@ Ya que los paquetes se han instalado ejecutamos podemos ejecutar uno de los sigu
 # Comando para generar archivos para producción
 λ npm run prod
 ```
+
+?> Al ejecutar elguno de estos comandos no olvidemos que se ejecutara `webpack-dev-server` mismo que nos creara un localhost para ver nuestro archivo en ejecución, generalmente sera `http://localhost:3000` a menos que le indiquemos lo contrario.
