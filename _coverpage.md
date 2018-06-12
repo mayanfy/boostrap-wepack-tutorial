@@ -10,6 +10,6 @@
 * Crea multiples diseños html
 
 [GitHub](https://github.com/mayanfy/bootpack/)
-[Empiece a trabajar](?id=bootpack)
+[Empiece a trabajar](#bootpack)
 
 ![color](#e5fcf2)

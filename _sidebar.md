@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
 
 * Primeros pasos
-	* [Presentación](README.md)
+	* [Presentación](#bootpack)
 	* [Inicio rápido](guia.md)
