@@ -4,7 +4,7 @@
 
 # Que es
 
-bootpack es la union de dos frameworks para desarrollar maquetado web de una manera facil y sencilla. Todo lo que necesitas hacer es descargar el repositorio correr unos cuantos comandos y ya solo tienes que usar las etiquetas y clases de bootstrap 4 y webpack 4 hara el resto por ti.
+Bootpack es la union de dos frameworks para desarrollar maquetado web de una manera facil y sencilla. Todo lo que necesitas hacer es descargar el repositorio correr unos cuantos comandos, despues de esto lo unico queda hacer es usar las etiquetas y clases de Bootstrap 4. **Webpack hara el resto por ti**.
 
 Vea el Inicio rápido para más detalles.
 

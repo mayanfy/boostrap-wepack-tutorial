@@ -2,14 +2,14 @@
 
 ![logo](_media/bootpack.svg)
 
-# Bootpack <small>3.5</small>
+# Bootpack <small>1.0.0</small>
 
 > El generador mágico de sitios web.
 
 * Todo el poder de Bootstrap y Webpack
-* Crea multiples estilos
+* Crea multiples diseños html
 
 [GitHub](https://github.com/mayanfy/bootpack/)
-[Empiece a trabajar](#)
+[Empiece a trabajar](?id=bootpack)
 
-![color](#f2effc)
+![color](#e5fcf2)

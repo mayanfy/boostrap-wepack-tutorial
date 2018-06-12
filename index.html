@@ -10,22 +10,26 @@
 </head>
 <body>
   <!-- <div id="app"></div> -->
-    <div data-app id="main">Please wait...</div>
+    <div data-app id="main">Cargando, espere por favor...</div>
   <script>
     window.$docsify = {
+      el: '#main',
+      name: 'Bootpack',
 
       coverpage: true,
+      coverpage: '_coverpage.md',
 
-  // Custom file name
-  coverpage: '_coverpage.md',
-
-      // name: '',
-      // repo: ''
-      el: '#main',
       loadSidebar: true,
-      subMaxLevel: 1
+      subMaxLevel: 3,
+
+      search: {
+        paths: 'auto',
+        placeholder: 'Escriba para buscar',
+        noData: 'No hay resultados!'
+      }
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>

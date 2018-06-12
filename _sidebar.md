@@ -1,4 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-* [Inicio](/)
-* [Guide](guia.md)
+* Primeros pasos
+	* [Presentación](readme.md)
+	* [Inicio rápido](guia.md)
