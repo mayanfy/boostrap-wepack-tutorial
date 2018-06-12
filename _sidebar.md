@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
 
 * Primeros pasos
-	* [Presentación](readme.md)
+	* [Presentación](README.md)
 	* [Inicio rápido](guia.md)
