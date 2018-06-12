@@ -1,6 +1,8 @@
 # Inicio rápido
 
-Instalar npm, este viene con la instalación de [Node js](https://nodejs.org/es/) para el uso de este paquete se trabajo con la version Actual(v10.4.0).
+Instalar **npm**, este viene con la instalación de [Node JS](https://nodejs.org/es/) para el ejecutar bootpack se trabajo con la versión Actual(v10.4.0).
+
+?> **A considerar:** Bootpack trae integrado los las fuentes de [Font Awesome v4.7](https://fontawesome.com/v4.7.0/) y [Material Design Icons](https://materialdesignicons.com/)
 
 ## Descargar Bootpack
 
@@ -28,9 +30,9 @@ Una vez que tenemos instalado npm y descargado el repositorio procedemos a insta
 Ya que los paquetes se han instalado ejecutamos podemos ejecutar uno de los siguientes comandos para tener los archivos de bootstrap. En este caso sera el archivo **CSS** y **JS**.
 
 ```bash
-# Comando para developer
+# Comando para generar archivos de desarrollo
 λ npm run dev
 
-# Comando para developer
+# Comando para generar archivos para producción
 λ npm run prod
 ```
