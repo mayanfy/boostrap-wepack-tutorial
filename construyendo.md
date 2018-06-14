@@ -23,6 +23,7 @@ Partiendo en que lo que queremos es generar el archivo `main.css` apartir del lo
 ```text
 .
 └── bootpack
+    ├── dist
     ├── src
     	├── img
         ├── scss
@@ -85,7 +86,52 @@ npm install --save-dev webpack-cli@3.0.3
 ```
 ___
 
-?> Usamos `--save-dev` para que nuestros bundles de desarrollo se guarde en `"devDependencies": {}` de nuestro archivo `package.json`
+> Usamos `--save-dev` para que nuestros bundles de desarrollo se guarde en `"devDependencies": {}` de nuestro archivo `package.json`
 
 # Configurar webpack
 
+Para construir nuestra app requerimos decirle a webpack que es lo que necesita hacer y como debe hacerlo. Para esto webpack buscar el archivo `webpack.congif.js` que esta en la raiz de bootpack. Aqui es donde se configura las tareas que queremos que webpack ejecute.
+
+Para la configuración basica se requiere de dos puntos iniciales:
+
+1. entry: archivo o archivos desde donde webpack busca todo nuestro código.
+2. output: donde estara ubicado nuestro archivo de salida con todo nuestro codigo compilado.
+
+**NOTA:** Como podemos estar trabajando en diferentes entornos(Windows, Linux, Mac OS) usaremos una libreria que resuelva las url donde se buscara los archivos de entrada y donde se generara los archivos de salida, para esto usaremos `path` que ya viene instalado con node.
+
+**Quedando de la siguiente forma:**
+
+```javascript
+//  webpack.config.js 
+const path = require('path');
+
+const config = {
+    entry: './src/app.js',
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'js/bundle.js'
+    }
+};
+
+module.exports = config;
+```
+
+Configurar los comandos para ejecutar webpack. En el archivo `package.json` de la raiz de bootpack, añadir las siguientes lineas de codigo:
+
+```json
+{
+  "name": "bootpack",
+  ...
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  ...
+}
+
+```
+
+?> Ejecutamos el comando `npm run dev`
+
+Al ejecutar el comando `npm run dev` se genera el archivo `js/bunble.js` dentro la carpeta `dist/`,  este es el archivo de salida de la app que definimos en `webpack.config.js`.
