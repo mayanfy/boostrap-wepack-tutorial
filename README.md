@@ -1,6 +1,6 @@
 # Bootpack
 
-> *Bootpack* es un paquete inicial para el desarrollo de html con bootstrap y webpack  
+> *Bootpack* es un paquete inicial para el desarrollo de html-css con bootstrap y webpack  
 
 # Que es
 
@@ -21,4 +21,4 @@ Echa un vistazo a los [templates](https://mayanfy/themes) desarrollados con boot
 
 ***
 
-Documentación desarrollada con [docsify](https://docsify.js.org)
+Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:

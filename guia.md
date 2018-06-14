@@ -1,4 +1,4 @@
-# Inicio rápido
+# Instalación
 
 Instalar **npm**, este viene con la instalación de [Node JS](https://nodejs.org/es/) para el ejecutar bootpack se instalo la versión Actual(v10.4.0).
 

@@ -2,5 +2,7 @@
 
 * Primeros pasos
 	* [Presentación](#bootpack)
-	* [Inicio rápido](guia.md)
-	* [Construyendo Bootpack](construyendo.md)
+	* [Instalación](guia.md)
+* Bootpack
+	* [Construcción](construyendo.md)
+	* [Plugins](plugins.md)
