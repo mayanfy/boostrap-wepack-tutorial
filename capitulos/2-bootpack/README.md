@@ -8,7 +8,7 @@ Entonces se decidio que se podia hacer algo al respecto para generar el css de b
 
 # Índice
 
-1. [Configuración basica](#)
+1. [Configuración basica](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/1-configuracion-basica.md)
 2. [Soporte html con pug](#)
 3. [Soporte css con sass](#)
 4. [Soporte iconos tipograficos](#)

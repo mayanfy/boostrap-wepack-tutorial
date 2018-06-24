@@ -19,9 +19,9 @@ Vea el Inicio rápido para más detalles.
 
 # Temas
 
-1. [Primeros pasos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/1-primeros-pasos/README.md)
-    1. [Presentación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/1-primeros-pasos/README.md)
-    2. [Instalación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/1-primeros-pasos/README.md)
+1. [Primeros pasos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/README.md)
+    1. [Presentación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/README.md)
+    2. [Instalación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/README.md)
 2. [Bootpack](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/README.md)
     1. [Configuración básica](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/1-configuracion-basica.md)
     2. [Soporte Html con Pug](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/)
