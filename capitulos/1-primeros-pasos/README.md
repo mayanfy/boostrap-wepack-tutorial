@@ -38,3 +38,7 @@ Una vez instaladas las dependencias pasamos a ejecutar uno de los siguientes com
 ```
 
 ?> Al ejecutar elguno de estos comandos no olvidemos que se ejecutara `webpack-dev-server` mismo que nos creara un localhost para ver nuestro archivo en ejecución, generalmente sera `http://localhost:3000` a menos que le indiquemos lo contrario.
+
+***
+
+Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:

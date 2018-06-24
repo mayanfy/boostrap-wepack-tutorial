@@ -1,4 +1,4 @@
-![logo](_media/bootpack.svg)
+![logo](media/bootpack.svg)
 
 # Bootpack
 
