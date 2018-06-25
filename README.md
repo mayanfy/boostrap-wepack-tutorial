@@ -24,10 +24,10 @@ Bootpack es la union de dos frameworks para desarrollar maquetado web de una man
     2. [Instalación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/README.md)
 2. [Bootpack](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/README.md)
     1. [Configuración básica](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/1-configuracion-basica.md)
-    2. [Soporte Html con Pug](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/)
-    3. [Soporte Css con Sass](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/)
-    4. [Soporte Iconos Tipograficos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/)
-    5. [Añadiendo Plugins](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/)
+    2. [Soporte Html con Pug](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/2-soporte-html-pug.md)
+    3. [Soporte Css con Sass](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/3-soporte-css-sass.md)
+    4. [Soporte Iconos Tipograficos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/4-soporte-iconos-tipograficos.md)
+    5. [Añadiendo Plugins](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/5-plugins.md)
 
 # :rocket: Ejemplos
 
