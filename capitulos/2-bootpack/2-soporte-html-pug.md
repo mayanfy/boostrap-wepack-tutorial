@@ -92,3 +92,7 @@ Como pueden observar aqui estamos añadiendo varias lineas de codigo, que al pri
 **modules:** En esta seccion vamos a definr las tareas o reglas que queremos que webpack ejecute, estas las definimos dentro la etiqueta `rules: {}` un ejemplo seria tomar los templates o archivos de pug que creemos y con estas reglas le decimos que todo el codigo pug se genere las etiquetas html tracionales.
 
 **plugins:** Estas hacen tareas espeficicas, como por ejemplo en este caso que estamos usando pug, con `HtmlWebpackPlugin` le decimos que tome el template de `index.pug`, y lo renderize en un archivo `index.html`. y ustedes diran pero ya en las reglas le dije que haga esa tarea, si asi es pero esas reglas nos genera el archivo `.html` entonces con este plugin es con el que generamos "fisicamente" nuestros archivos html.
+
+***
+
+Cualquier consulta, critica o sugerencia es totalmente bienvenida. Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:
