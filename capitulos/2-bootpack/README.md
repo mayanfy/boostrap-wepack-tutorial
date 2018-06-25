@@ -15,4 +15,4 @@ Entonces se decidio que se podia hacer algo al respecto para generar el css de b
 
 ***
 
-Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:
+Cualquier consulta, critica o sugerencia es totalmente bienvenida. Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:

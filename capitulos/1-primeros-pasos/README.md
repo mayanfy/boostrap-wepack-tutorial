@@ -1,44 +1,20 @@
-# Instalación
+# Bootpack
 
-Instalar **npm**, este viene con la instalación de [Node JS](https://nodejs.org/es/) para el ejecutar bootpack se instalo la versión Actual(v10.4.0).
+sin mas rollo mas que el de desarrollar nuestro maquetado web bootpack viene a ayudarnos para eso, por eso aqui la guia de instalacion de para descargar y usar.
 
-?> **A considerar:** Bootpack trae integrado las fuentes de [Font Awesome v4.7](https://fontawesome.com/v4.7.0/) y [Material Design Icons](https://materialdesignicons.com/)
+En las demas secciones que tenemos te mestramos cual fue el proceso de integración de las diferentes herramientas para el uso en bootpack, si deseas contribuir no dudes en mandarnos tus issues o comentarios. 
 
-## Descargar Bootpack
+>  Disfruta bootpack ahora!
 
-Para esto usamos la consola de windows o en su caso usar [cmder](http://cmder.net/).
+# Índice
 
-```bash
-λ mkdir directorio/aplicaciones/bootpack
-λ cd directorio/aplicaciones/bootpack
-λ git init
-λ git remote add origin https://github.com/mayanfy/bootpack.git
-λ git fetch origin master
-λ git pull origin master
-```
+1. [Instalción](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/1-instalacion.md)
 
-## Instalar paquetes npm
+# A considerar
 
-Una vez que tenemos instalado npm y descargado el repositorio procedemos a instalar los paquetes del cual depende Bootpack. 
+Para el uso de esta herramienta consideramos que ya sabes usar las herramientas de GIT, Consola, Node Js en su modo mas básico ya que solo nos servira para poder descargar y correr nuestro framework.
 
-``` bash
-λ npm install
-```
-
-## Ejecutar Bootpack
-
-Una vez instaladas las dependencias pasamos a ejecutar uno de los siguientes comandos para tener los archivos de bootstrap dependiendo si es cuando estamos desarrollando o en su caso ya es para producción. En ambos casos se generaran los archivos `main.css` y `app.js` dentro la carpeta definida para el proyecto.
-
-```bash
-# Comando para generar archivos de desarrollo
-λ npm run dev
-
-# Comando para generar archivos para producción
-λ npm run prod
-```
-
-?> Al ejecutar elguno de estos comandos no olvidemos que se ejecutara `webpack-dev-server` mismo que nos creara un localhost para ver nuestro archivo en ejecución, generalmente sera `http://localhost:3000` a menos que le indiquemos lo contrario.
 
 ***
 
-Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:
+Cualquier consulta, critica o sugerencia es totalmente bienvenida. Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:

@@ -53,7 +53,7 @@ Para generar el archivo desde donde `npm` ejecuta webpack se crea el siguiente a
 
 # Instalar webpack
 
-Sin antrar en tanto detalle webpack es un empaquetador de módulos, que permite encapsular los modulos que necesites en tu aplicación en un solo archivo generalmente llamado `bundle.js`, pero webpack al ser muy versatil permite el uso de bundles o pequeños scripts que hacen tareas especificas que permiten trabajar con archivos `.scss` para compilar css, `.pug` para compilar html, etc. Esto permite que al estar desarrollando nuestra app con **webpack** sea de una forma mas ágil y organizada.
+Sin entrar en tanto detalle webpack es un empaquetador de módulos, que permite encapsular los modulos que necesites en tu aplicación en un solo archivo generalmente llamado `bundle.js`, pero webpack al ser muy versatil permite el uso de bundles o pequeños scripts que hacen tareas especificas que permiten trabajar con archivos `.scss` para compilar css, `.pug` para compilar html, etc. Esto permite que al estar desarrollando nuestra app con **webpack** sea de una forma mas ágil y organizada.
 
 Para el uso de webpack se requiere dos paquetes que trabajan en conjunto para ejecutar las tareas que se configuren en el archivo `webpack.config.js` y estos son `webpack` y `webpack-cli`, los comandos que ejectuaremos en la raiz de nuestro proyecto son:
 
@@ -124,4 +124,4 @@ Al ejecutar el comando `npm run dev` se genera el archivo `js/bunble.js` dentro 
 
 ***
 
-Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:
+Cualquier consulta, critica o sugerencia es totalmente bienvenida. Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:

@@ -35,4 +35,4 @@ Echa un vistazo a los [templates](https://mayanfy/themes) desarrollados con Boot
 
 ***
 
-Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:
+Cualquier consulta, critica o sugerencia es totalmente bienvenida. Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:
