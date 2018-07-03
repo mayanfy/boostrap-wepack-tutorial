@@ -1,19 +1,13 @@
-# Bootpack
+# Primeros pasos
 
-sin mas rollo mas que el de desarrollar nuestro maquetado web bootpack viene a ayudarnos para eso, por eso aqui la guia de instalacion de para descargar y usar.
+Para el uso y construcción de esta herramienta se usaran otros frameworks como son GIT, la Consola, Node Js ya que son las herramientas y frameworks que ayudaran para poder descargar y correr los paquetes que se ocupe en en la herramienta a desarrollar.
 
-En las demas secciones que tenemos te mestramos cual fue el proceso de integración de las diferentes herramientas para el uso en bootpack, si deseas contribuir no dudes en mandarnos tus issues o comentarios. 
-
->  Disfruta bootpack ahora!
+> El [código fuente](https://github.com/mayanfy) de este tutorial está disponible en GitHub.
 
 # Índice
 
-1. [Instalción](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/1-instalacion.md)
-
-# A considerar
-
-Para el uso de esta herramienta consideramos que ya sabes usar las herramientas de GIT, Consola, Node Js en su modo mas básico ya que solo nos servira para poder descargar y correr nuestro framework.
-
+1. [Requisitos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/1-requisitos.md)
+<!-- 1. [Instalación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/2-instalacion.md) -->
 
 ***
 

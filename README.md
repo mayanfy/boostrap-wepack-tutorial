@@ -1,13 +1,8 @@
-![logo](media/bootpack.svg)
+<!-- ![logo](media/bootpack.svg) -->
 
-# Bootpack
+# Tutorial Instalacion Bootstrap 4 con Webpack 4
 
-*Bootpack* es el paquete standalone para maquetado web con los frameworks bootstrap y webpack  
-
-# :interrobang: ¿Que es?
-
-Bootpack es la union de dos frameworks para desarrollar maquetado web de una manera facil y sencilla. Todo lo que necesitas hacer es descargar el repositorio correr unos cuantos comandos, despues lo unico queda hacer es usar las etiquetas y clases de Bootstrap 4. **Bootpack hará el resto por tí**.
-
+Se cubrira de pricipio a fin como integrar bootstrap 4 en el popular framework webpack 4, para poder automatizar la creacion de templates propios. al final de toda la configuración desarrollaremos una landing page usando la herramienta.
 
 # :heavy_check_mark: Caracteristicas
 
@@ -15,19 +10,20 @@ Bootpack es la union de dos frameworks para desarrollar maquetado web de una man
 * Uso de Webpack 4
 * Generar Html con Pug
 * Generar Css con Sass
-* Uso de iconos tipograficos([Fontawesome v4.7](#), [@mdi/font](#))
+* Uso de iconos tipograficos([Fontawesome v4.7](https://fontawesome.com/v4.7.0/), [@mdi/font](https://materialdesignicons.com/getting-started))
 
 # :memo: Temas
 
 1. [Primeros pasos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/README.md)
-    1. [Presentación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/README.md)
-    2. [Instalación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/README.md)
+    1. [Requisitos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/1-requisitos.md)
+    <!-- 2. [Instalación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/README.md) -->
 2. [Bootpack](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/README.md)
     1. [Configuración básica](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/1-configuracion-basica.md)
     2. [Soporte Html con Pug](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/2-soporte-html-pug.md)
     3. [Soporte Css con Sass](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/3-soporte-css-sass.md)
     4. [Soporte Iconos Tipograficos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/4-soporte-iconos-tipograficos.md)
     5. [Añadiendo Plugins](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/5-plugins.md)
+1. [Uso](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/3-uso/README.md)
 
 # :rocket: Ejemplos
 
