@@ -1,8 +1,8 @@
 <!-- ![logo](media/bootpack.svg) -->
 
-# Tutorial Instalacion Bootstrap 4 con Webpack 4
+# Tutorial Configuración de Bootstrap 4 con Webpack 4 (Bootpack)
 
-Se cubrira de pricipio a fin como integrar bootstrap 4 en el popular framework webpack 4, para poder automatizar la creacion de templates propios. al final de toda la configuración desarrollaremos una landing page usando la herramienta.
+Se cubrira de pricipio a fin como integrar bootstrap 4 en el popular framework webpack 4, para poder automatizar la creacion de templates propios.
 
 # :heavy_check_mark: Caracteristicas
 
@@ -14,16 +14,13 @@ Se cubrira de pricipio a fin como integrar bootstrap 4 en el popular framework w
 
 # :memo: Temas
 
-1. [Primeros pasos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/README.md)
-    1. [Requisitos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/1-requisitos.md)
-    <!-- 2. [Instalación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/README.md) -->
+1. [Requisitos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/README.md)
 2. [Bootpack](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/README.md)
     1. [Configuración básica](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/1-configuracion-basica.md)
     2. [Soporte Html con Pug](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/2-soporte-html-pug.md)
     3. [Soporte Css con Sass](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/3-soporte-css-sass.md)
     4. [Soporte Iconos Tipograficos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/4-soporte-iconos-tipograficos.md)
     5. [Añadiendo Plugins](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/5-plugins.md)
-1. [Uso](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/3-uso/README.md)
 
 # :rocket: Ejemplos
 

@@ -1,13 +1,28 @@
 # Primeros pasos
 
-Para el uso y construcción de esta herramienta se usaran otros frameworks como son GIT, la Consola, Node Js ya que son las herramientas y frameworks que ayudaran para poder descargar y correr los paquetes que se ocupe en en la herramienta a desarrollar.
+Para el uso y construcción de esta herramienta se usaran otros frameworks como son GIT, Consola, Node Js estos ayudaran para poder descargar y ejecutar los bundles npm que se ocupe en en la herramienta a desarrollar.
 
-> El [código fuente](https://github.com/mayanfy) de este tutorial está disponible en GitHub.
+> El [código fuente](https://github.com/mayanfy/bootpack) de este tutorial está disponible en GitHub.
 
-# Índice
+# Requisitos
 
-1. [Requisitos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/1-requisitos.md)
-<!-- 1. [Instalación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/1-primeros-pasos/2-instalacion.md) -->
+Estos son los frameworks basicos que se requieren para construir la herramienta de uso de bootstrap 4 con webpack 4.
+
+### 1. Npm y Node Js
+
+Instalación de [Node JS](https://nodejs.org/es/) para usar la herramienta **npm**.
+
+### 2. Consola
+
+Uso de la Consola que trae integrado el sistema operativo.
+
+### 3. Github
+
+Istalación de [Git](https://git-scm.com/) para subir la herramienta a un repositorio de Github.
+
+### 4. Configuración
+
+Iniciar la [configuración e instación](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/README.md) de boostrap en webpack.
 
 ***
 
