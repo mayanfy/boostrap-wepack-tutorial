@@ -1,15 +1,15 @@
 # Configuración básica
 
-Para construcción de bootpack se requiere de los siguientes archivos y carpetas.
+Crear la siguiente estructura de directorios para el proyecto, separando el código "fuente" `/src` del código "de distribución" `/dist`.
 
-Partiendo en que lo que queremos es generar el archivo `main.css` apartir del los archivos `.scss` de bootstrap, al igual que el archivo inicial de nuestra app que es `index.html` usamos el generador de templates [Pug](https://pugjs.org/) quedando de la siguiente forma.
+Para la construccion de bootpack se requiere el siguiente arbol de archivos.
 
 ```text
 .
 └── bootpack
-    ├── dist
-    ├── src
-    	├── img
+    ├── dist/
+    ├── src/
+    	├── img/
         ├── scss
         	└── app.scss
         ├── app.js
@@ -21,20 +21,23 @@ Partiendo en que lo que queremos es generar el archivo `main.css` apartir del lo
     └── webpack.config.js
 ```
 
+> **Nota:** Se usara el framework de _Pug_ para generar los archivos `.html`
+
 # Inicializar npm
 
-Para generar el archivo desde donde `npm` ejecuta webpack se crea el siguiente archivo `package.json` y este puede ser generado de dos formas en la raiz de nuestro poryecto bootpack:
+Para instalar los bundles se crea `package.json`. Para esto tenemos dos opciones: 
 
-1. En la consola nos dirijimos a la raiz del proyecto y ejecutamos `npm init`.
-	* Enter a todas las opciones que nos pide.
-2. En la raiz del proyecto creamos el archivo `package.json`.
+1. Desde la Consola, redirecciónar a la raiz del proyecto y ejecutar `npm init`.
+	 * Enter a todas las opciones que nos pide.
+   * Se genera el archivo `package.json`.
+2. En la raiz del proyecto crear el archivo `package.json`.
 	* Copiar y pegar lo siguiente.
 
 ```json
 {
   "name": "bootpack",
   "version": "1.0.0",
-  "description": "desarrollar sitios html con bootstrap y webpack",
+  "description": "desarrollar páginas web html con bootstrap y webpack",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -53,37 +56,44 @@ Para generar el archivo desde donde `npm` ejecuta webpack se crea el siguiente a
 
 # Instalar webpack
 
-Sin entrar en tanto detalle webpack es un empaquetador de módulos, que permite encapsular los modulos que necesites en tu aplicación en un solo archivo generalmente llamado `bundle.js`, pero webpack al ser muy versatil permite el uso de bundles o pequeños scripts que hacen tareas especificas que permiten trabajar con archivos `.scss` para compilar css, `.pug` para compilar html, etc. Esto permite que al estar desarrollando nuestra app con **webpack** sea de una forma mas ágil y organizada.
+La instalación de webpack requiere los bundles de `webpack` y `webpack-cli` que son instalados con *npm*.
 
-Para el uso de webpack se requiere dos paquetes que trabajan en conjunto para ejecutar las tareas que se configuren en el archivo `webpack.config.js` y estos son `webpack` y `webpack-cli`, los comandos que ejectuaremos en la raiz de nuestro proyecto son:
-
-**1. Instalar webpack**
+**1. Instalar el bundle webpack**
 
 ```bash
 npm install --save-dev webpack@4.12.0
 ```
 
-**2. Instalar webpack-cli**
+**2. Instalar el bundle webpack-cli**
 
 ```bash
 npm install --save-dev webpack-cli@3.0.3
 ```
-___
 
-> Usamos `--save-dev` para que nuestros bundles de desarrollo se guarde en `"devDependencies": {}` de nuestro archivo `package.json`
+> **Nota:** `--save-dev` se usa para que los bundles de desarrollo se guarde en `"devDependencies": {}` en el archivo `package.json`.
+
+Depues de la instalación de los bundles, en el archivo `package.json` se añadieron las siguientes lineas automaticamente.
+
+```json
+{
+  ...
+  "devDependencies": {
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3"
+  }
+}
+```
 
 # Configurar webpack
 
-Para construir nuestra app requerimos decirle a webpack que es lo que necesita hacer y como debe hacerlo. Para esto webpack buscar el archivo `webpack.congif.js` que esta en la raiz de bootpack. Aqui es donde se configura las tareas que queremos que webpack ejecute.
+Para la configuración se requiere de dos conceptos iniciales:
 
-Para la configuración basica se requiere de dos puntos iniciales:
+1. entry: archivo o archivos donde se encuentra el codigo de entrada.
+2. output: donde estará ubicado el archivo de salida.
 
-1. entry: archivo o archivos desde donde webpack busca todo nuestro código.
-2. output: donde estara ubicado nuestro archivo de salida con todo nuestro codigo compilado.
+**NOTA:** Dependiendo del entorno de trabajo(Windows, Linux, Mac OS) se usara la libreria `path` que resuelva los directorios donde estan los archivos de entrada y donde se generará los archivos de salida.
 
-**NOTA:** Como podemos estar trabajando en diferentes entornos(Windows, Linux, Mac OS) usaremos una libreria que resuelva las url donde se buscara los archivos de entrada y donde se generara los archivos de salida, para esto usaremos `path` que ya viene instalado con node.
-
-**Quedando de la siguiente forma:**
+**Paso 1.** Abrir el archivo `webpack.config.js`, copiar y pegar el siguiente código:
 
 ```javascript
 //  webpack.config.js 
@@ -100,7 +110,7 @@ const config = {
 module.exports = config;
 ```
 
-Configurar los comandos para ejecutar webpack. En el archivo `package.json` de la raiz de bootpack, añadir las siguientes lineas de codigo:
+**Paso 2.** Configurar los comandos para ejecutar webpack. En el archivo `package.json`, añadir las siguientes lineas de codigo:
 
 ```json
 {
@@ -116,11 +126,14 @@ Configurar los comandos para ejecutar webpack. En el archivo `package.json` de l
 
 ```
 
+**Paso 3.** Desde la Consola en la raiz del proyecto ejecutar el comando:
 
-> Ejecutamos el comando `npm run dev`
+```bash
+npm run dev
+```
 
 
-Al ejecutar el comando `npm run dev` se genera el archivo `js/bunble.js` dentro la carpeta `dist/`,  este es el archivo de salida de la app que definimos en `webpack.config.js`.
+Al ejecutar el comando `npm run dev` se genera el archivo `js/bunble.js` dentro la carpeta `dist/`,  este es el archivo de salida del proyecto definido en `webpack.config.js`.  
 
 ***
 

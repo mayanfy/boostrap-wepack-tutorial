@@ -1,47 +1,102 @@
 # Soporte Html con Pug 
 
-En esta seccion lo que haremos es instalar el soporte de html con Pug ya que aqui es donde vamos poder ver la magia que sucede cuando se va programndo los estilos de css que seran generados con sass, claro, con el soporte de bootstrap 4.
+En esta sección se configurará el soporte de html con pug. Que es el framework que genera los archivos `.html`.
 
+Para usar Pug instalamos los siguientes loaders que darán el soporte para su uso. Para esto nos redireccionamos desde la Consola a la raiz del proyecto y ejecutamos los siguientes comandos.
 
-# Instalando 
+### 1. Instalar pug
 
-Para poder usar el Pug intalamos las siguientes dependencias o loaders que nos daran el soporte para poder usarlos.
-
-### 1. Instalar html loader
-
-Este loader lo que hace es que si dentro el archivo html usamos imagenes nos ponga de forma correcta la direcciones donde se encuentra en nuestro directorio `dist`.
-
-```bash
-npm install --save-dev html-loader
-```
-
-### 2. Instalar pug
-
-Esto loader nos da el soporte para poder interpretar los archivos pug.
+Loader que interpreta los archivos `.pug`.
 
 ```bash
 npm install --save-dev pug
 ```
 
-### 3. Instalar pug html loader
+### 2. Instalar pug html loader
 
-Este loader lo que hace es leer un archivo con etiquetas pug y pasarlas a etiquetas html tradicionales.
+Loader que interpreta etiquetas pug y las pasa a etiquetas html.
 
 ```bash
 npm install --save-dev pug-html-loader
 ```
 
+### 3. Instalar html loader
+
+La tarea de este loader es buscar dentro los  `.html` las url de las imagenes y ponerla de forma correcta. 
+
+Por ejemplo si en `index.html` encuentra una imagen `src/img/nombreimagen.jpg` pone la dirección `dist/img/nombreimagen.jpg` del directorio de salida.
+
+```bash
+npm install --save-dev html-loader
+```
+
 ### 4. Instalar html webpack plugin
 
-Este loader nos ayuda a definir nuestro templates html y exportarlo a nuestra carpeta `dist`
+Loader para configurar y definir los templates pug-html y exportarlo a la carpeta `dist/`
 
 ```bash
 npm install --save-dev html-webpack-plugin
 ```
 
-# configurando el archivo webpack.config.js
+Despues de la instalación de los loader's el archivo `package.json` añadio las siguientes lineas.
 
-Añadimos las siguientes lineas al archivo dejando las que se habian puesto en el paso anterior, esto es para poder usar la dependecia de pug a nuestro proyecto de bootpack.
+```json
+{
+  ...
+  "devDependencies": {
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "pug": "^2.0.3",
+    "pug-html-loader": "^1.1.5",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3"
+  }
+}
+
+```
+
+# Configurar el archivo webpack.config.js
+
+Añadir las siguientes lineas al archivo `webpack.config.js`, esto es para usar los loaders de pug en nuestro proyecto.
+
+```javascript
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const config = {
+    ...
+    module: {
+        rules: [
+            {
+                test: /\.pug$/,
+                use: [
+                    {
+                        loader: 'html-loader',
+                        options: {
+                            publicPath: "./images"
+                        }
+                    },
+                    {
+                        loader: 'pug-html-loader', 
+                        options: { 
+                            pretty: "    " 
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'src/index.pug'
+        })
+    ]
+};
+
+module.exports = config;
+```
+
+Quedando el archivo `webpack.config.js` de la siguiente forma:
 
 ```javascript
 //  webpack.config.js 
@@ -52,7 +107,7 @@ const config = {
     entry: './src/app.js',
 
     output: {
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'js/bundle.js'
     },
     module: {
@@ -87,11 +142,15 @@ const config = {
 module.exports = config;
 ```
 
-Como pueden observar aqui estamos añadiendo varias lineas de codigo, que al principio no tiene mucho sentido, para fines ilustrativos efoquemonos en  `module: {}` y `plugins: []`. 
+En esta configuracion se observa dos bloques que son `module: {}` y `plugins: []`. 
 
-**modules:** En esta seccion vamos a definr las tareas o reglas que queremos que webpack ejecute, estas las definimos dentro la etiqueta `rules: {}` un ejemplo seria tomar los templates o archivos de pug que creemos y con estas reglas le decimos que todo el codigo pug se genere las etiquetas html tracionales.
+**module:** Esta sección se define las tareas o reglas que webpack ejecutará, se configuran en `rules: {}`.
 
-**plugins:** Estas hacen tareas espeficicas, como por ejemplo en este caso que estamos usando pug, con `HtmlWebpackPlugin` le decimos que tome el template de `index.pug`, y lo renderize en un archivo `index.html`. y ustedes diran pero ya en las reglas le dije que haga esa tarea, si asi es pero esas reglas nos genera el archivo `.html` entonces con este plugin es con el que generamos "fisicamente" nuestros archivos html.
+ejemplo: se busca los archivos `.pug` y esta regla convierte las etiquetas pug en etiquetas html.
+
+**plugins:** Realizan tareas espeficicas, que no pueden ser definidas en `module: {}`.
+
+Ejemplo: con el plugin `HtmlWebpackPlugin` se determina el archivo `index.pug` a ser renderizado en un archivo `index.html`. Con este plugin se genera "fisicamente" el archivo `dist/index.html`.
 
 ***
 

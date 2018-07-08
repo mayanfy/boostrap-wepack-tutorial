@@ -1,8 +1,8 @@
 <!-- ![logo](media/bootpack.svg) -->
 
-# Tutorial Configuración de Bootstrap 4 con Webpack 4 (Bootpack)
+# Configuración de Bootstrap 4 con Webpack 4 (Bootpack)
 
-Se cubrira de pricipio a fin como integrar bootstrap 4 en el popular framework webpack 4, para poder automatizar la creacion de templates propios.
+Se integrará dos tecnologías para facilitar la creación de páginas web HTML con  [bootstrap 4](https://getbootstrap.com/) y [webpack 4](https://webpack.js.org/).
 
 # :heavy_check_mark: Caracteristicas
 
@@ -10,7 +10,7 @@ Se cubrira de pricipio a fin como integrar bootstrap 4 en el popular framework w
 * Uso de Webpack 4
 * Generar Html con Pug
 * Generar Css con Sass
-* Uso de iconos tipograficos([Fontawesome v4.7](https://fontawesome.com/v4.7.0/), [@mdi/font](https://materialdesignicons.com/getting-started))
+* Uso de iconos tipográficos([Fontawesome v4.7](https://fontawesome.com/v4.7.0/), [@mdi/font](https://materialdesignicons.com/getting-started))
 
 # :memo: Temas
 
@@ -20,11 +20,13 @@ Se cubrira de pricipio a fin como integrar bootstrap 4 en el popular framework w
     2. [Soporte Html con Pug](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/2-soporte-html-pug.md)
     3. [Soporte Css con Sass](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/3-soporte-css-sass.md)
     4. [Soporte Iconos Tipograficos](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/4-soporte-iconos-tipograficos.md)
-    5. [Añadiendo Plugins](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/5-plugins.md)
+    5. [Bootstrap](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/5-bootstrap.md)
+    6. [Sync](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/6-sync.md)
+    7. [Plugins](https://github.com/mayanfy/bootstrap-webpack-tutorial/blob/master/capitulos/2-bootpack/7-plugins.md)
 
 # :rocket: Ejemplos
 
-Echa un vistazo a los [templates](https://mayanfy/themes) desarrollados con Bootpack.
+[> ver templates](https://mayanfy/themes) desarrollados con Bootpack.
 
 ***
 
