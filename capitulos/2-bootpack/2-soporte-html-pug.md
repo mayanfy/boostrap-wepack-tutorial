@@ -152,6 +152,43 @@ ejemplo: se busca los archivos `.pug` y esta regla convierte las etiquetas pug e
 
 Ejemplo: con el plugin `HtmlWebpackPlugin` se determina el archivo `index.pug` a ser renderizado en un archivo `index.html`. Con este plugin se genera "fisicamente" el archivo `dist/index.html`.
 
+# Ejecutar pug
+
+**1.** Configurar el archivo `src/index.pug` con el siguiente codigo.
+
+```html
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title index
+body
+  h1 Hola mundo!
+```
+
+**2.** En la Consola desde la raiz del proyecto ejecutar:
+
+```bash
+npm run dev
+```
+
+La salida es `dist/index.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>index</title>
+</head>
+<body>
+    <h1>Hola mundo!</h1>
+    <script type="text/javascript" src="js/bundle.js"></script>
+</body>
+```
+
+> ir a  [Configurar css con sass]() 
+
 ***
 
 Cualquier consulta, critica o sugerencia es totalmente bienvenida. Desarrollado por [@chandzul](https://chandzul.com), [@sauware](https://sauware.com) con :heart:
