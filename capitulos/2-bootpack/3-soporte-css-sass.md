@@ -1,6 +1,6 @@
 # Soporte css con scss (sass) 
 
-En esta sección se instalara y configurará el soporte de css con sass. Que es el framework que genera los archivos `.css`.
+En esta sección se instalará y configurará el soporte de css con sass. Que es el framework que genera los archivos `.css`.
 
 Para usar sass instalamos los siguientes loaders que darán el soporte para su uso. Para esto nos redireccionamos desde la Consola a la raiz del proyecto y ejecutamos los siguientes comandos.
 
@@ -39,3 +39,5 @@ npm install --save-dev sass-loader
 ```bash
 npm install --save-dev style-loader
 ```
+
+Despues de la instalación de los loader's el archivo `package.json` añadio las siguientes lineas.
